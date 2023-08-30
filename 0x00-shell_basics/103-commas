@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1p --group-directories-first | awk '{printf "%s,",$0} END {print ""}'
+ls -1Ap | awk 'BEGIN{printf "./, ../, "} {if(NR>2) printf "%s,",$0} END {print ""}' | sed 's/,$/\n/'
