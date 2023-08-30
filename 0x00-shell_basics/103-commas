@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%s, ' . .. $(ls -1v --group-directories-first | grep -v -e '^\.$' -e '^\.\.$'); printf '\n'
+ls -1p --group-directories-first | awk '{printf "%s,",$0} END {print ""}'
