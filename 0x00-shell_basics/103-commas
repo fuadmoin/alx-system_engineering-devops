@@ -1,2 +1,2 @@
 #!/bin/bash
-files=$(ls -1ap | awk '{if (substr($0,length) == "/") printf "%s, ", $0; else printf "%s, ", $0}' | LC_COLLATE=C sort -k1,1); echo ${files::-2}
+printf '%s, ' . .. $(ls -1v --group-directories-first | grep -v -e '^\.$' -e '^\.\.$'); printf '\n'
