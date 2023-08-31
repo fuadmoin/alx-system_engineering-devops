@@ -1,1 +1,1 @@
-Commands and scripts for shell permissions
+Commands and scripts for shell permissions.
