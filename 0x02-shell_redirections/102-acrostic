@@ -1,0 +1,2 @@
+#!/bin/sh
+awk '{printf "%s", substr($0,1,1)} END {print ""}' "$1"
