@@ -1,0 +1,2 @@
+#!/bin/bash
+echo ((WATER=(echo "WATER"∣base64−d∣bc)+STIR=(echo "STIR"∣base64−d∣bc)∣base64∣tr−d ′= ′))
